@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@swc-node/jest": "1.6.7",
-    "@swc-node/register": "1.6.7",
+    "@swc-node/register": "1.6.8",
     "@tsconfig/node20": "20.1.2",
     "@tsconfig/strictest": "2.0.2",
     "@types/jest": "29.5.12",
