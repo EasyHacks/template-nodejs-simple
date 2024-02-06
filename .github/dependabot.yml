@@ -4,6 +4,16 @@ updates:
     directory: /
     schedule:
       interval: daily
+    groups:
+      swc-node:
+        patterns:
+          - "@swc-node/*"
+      tsconfig:
+        patterns:
+          - "@tsconfig/*"
+      typescript-eslint:
+        patterns:
+          - "@typescript-eslint/*"
   - package-ecosystem: github-actions
     directory: /
     schedule:
