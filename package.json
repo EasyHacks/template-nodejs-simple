@@ -2,11 +2,11 @@
   "name": "todo",
   "version": "0.0.0",
   "description": "todo",
-  "main": "index.js",
+  "main": "src/main.js",
   "type": "module",
   "keywords": [],
   "author": {
-    "name": "Florin Asavoaie",
+    "name": "Florin Asăvoaie",
     "email": "technology@easyhacks.net"
   },
   "license": "private",
@@ -16,19 +16,18 @@
     "start": "node --loader=@swc-node/register/esm -- src/main.ts",
     "test": "jest"
   },
-  "dependencies": {
-  },
   "devDependencies": {
+    "@eslint/js": "8.56.0",
     "@swc-node/jest": "1.6.7",
     "@swc-node/register": "1.6.7",
     "@tsconfig/node20": "20.1.2",
     "@tsconfig/strictest": "2.0.3",
     "@types/jest": "29.5.12",
     "@types/node": "20.11.17",
-    "@typescript-eslint/eslint-plugin": "7.0.1",
-    "@typescript-eslint/parser": "7.0.1",
     "eslint": "8.56.0",
+    "globals": "14.0.0",
     "jest": "29.7.0",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "typescript-eslint": "7.0.1"
   }
 }
