@@ -11,9 +11,6 @@ updates:
       tsconfig:
         patterns:
           - "@tsconfig/*"
-      typescript-eslint:
-        patterns:
-          - "@typescript-eslint/*"
   - package-ecosystem: github-actions
     directory: /
     schedule:
