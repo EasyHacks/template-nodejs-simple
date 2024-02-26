@@ -17,7 +17,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@eslint/js": "8.56.0",
+    "@eslint/js": "8.57.0",
     "@swc-node/jest": "1.6.7",
     "@swc-node/register": "1.6.7",
     "@tsconfig/node20": "20.1.2",
