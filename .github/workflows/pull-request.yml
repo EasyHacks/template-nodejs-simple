@@ -27,4 +27,4 @@ jobs:
           NODE_OPTIONS: --experimental-vm-modules
         run: npm run test
       - name: Run App
-        run: npm run start
+        run: npm --silent run start

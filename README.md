@@ -14,7 +14,4 @@ scripts. Not intended for real-life projects.
   quality.
 
 ## TODO
-
-- [ ] Replace eslint config with Flag Config
-- [ ] Replace `node --loader` with `node --import` when available
-- [ ] Remove `--experimental-vm-modules` flag when no longer required
+- [ ] Remove `--experimental-vm-modules` flag when no longer required on Jest test running. https://jestjs.io/ro/docs/ecmascript-modules. 
