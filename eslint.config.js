@@ -1,12 +1,20 @@
-import eslint from '@eslint/js';
-import globals from 'globals';
-import tseslint from 'typescript-eslint';
+/* eslint-disable @typescript-eslint/no-unsafe-argument,@typescript-eslint/no-unsafe-member-access */
+
+import eslint from '@eslint/js'
+import globals from 'globals'
+import eslintConfigPrettier from 'eslint-config-prettier'
+import tseslint from 'typescript-eslint'
+import eslintPluginPrettier from 'eslint-plugin-prettier/recommended'
 
 export default tseslint.config(
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument,@typescript-eslint/no-unsafe-member-access
+  {
+    ignores: ['**/node_modules/**', '**/dist/**', '**/coverage/**'],
+  },
   eslint.configs.recommended,
   ...tseslint.configs.strictTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
+  eslintPluginPrettier,
+  eslintConfigPrettier,
   {
     languageOptions: {
       parserOptions: {
@@ -21,14 +29,17 @@ export default tseslint.config(
       },
     },
     rules: {
-      'indent': ['error', 2],
       'linebreak-style': ['error', 'unix'],
-      'quotes': ['error', 'single'],
-      'semi': ['error', 'always'],
-      'curly': ['error', 'multi-or-nest'],
-      'object-curly-spacing': ['error', 'always'],
-      'comma-dangle': ['error', 'always-multiline'],
       'no-extend-native': 'error',
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
+        },
+      ],
     },
   },
-);
+)
