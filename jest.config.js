@@ -8,6 +8,6 @@ const config = {
   },
   testEnvironment: 'node',
   testMatch: ['**/*.spec.ts'],
-};
+}
 
-export default config;
+export default config

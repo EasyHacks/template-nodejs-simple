@@ -1,13 +1,12 @@
-import { jest } from '@jest/globals';
+import { jest } from '@jest/globals'
 
-import { App } from './app.js';
+import { App } from './app.js'
 
-// eslint-disable-next-line @typescript-eslint/no-empty-function
-const log = jest.spyOn(console, 'log').mockImplementation(() => {});
+const log = jest.spyOn(console, 'log').mockImplementation(() => undefined)
 
 describe('App', () => {
   it('says hello', () => {
-    new App();
-    expect(log).toHaveBeenCalledWith('Hello World!');
-  });
-});
+    new App()
+    expect(log).toHaveBeenCalledWith('Hello World!')
+  })
+})

@@ -1,7 +1,7 @@
 export class App {
-  public readonly message = 'Hello World!';
+  public readonly message = 'Hello World!'
 
   constructor() {
-    console.log(this.message);
+    console.log(this.message)
   }
 }
