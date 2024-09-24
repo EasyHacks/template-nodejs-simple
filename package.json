@@ -17,14 +17,14 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@eslint/js": "9.11.0",
+    "@eslint/js": "9.11.1",
     "@swc-node/jest": "1.8.12",
     "@swc-node/register": "1.10.9",
     "@tsconfig/node22": "22.0.0",
     "@tsconfig/strictest": "2.0.5",
     "@types/jest": "29.5.13",
     "@types/node": "22.6.1",
-    "eslint": "9.11.0",
+    "eslint": "9.11.1",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.2.1",
     "globals": "15.9.0",
